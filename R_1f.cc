@@ -2,9 +2,9 @@
 using namespace std;
 void series(int n,int i)
 {
-	if(i==n-1)
+	if(i==n)
 		return;
-	if(i==0)
+	if(i==1)
 		cout<<"1";
 	cout<<" + 1/"<<pow(2,i);
 	return series(n,i+1);
@@ -12,7 +12,7 @@ void series(int n,int i)
 
 int main() 
 { 
-    int n,i=0;
+    int n,i=1;
 	cin>>n;
     series(n,i);
     return 0; 
