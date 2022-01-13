@@ -2,7 +2,7 @@
 using namespace std;
 void odd(int n,int i)
 {
-	if(i>n)
+	if(i>2*n)
 		return;
 	cout<<i<<" ";
 	return odd(n,i+2);
